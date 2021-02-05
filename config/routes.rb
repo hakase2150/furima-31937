@@ -1,4 +1,3 @@
 Rails.application.routes.draw do
-  resources :tweets, only: :index
-  root to: "tweets#index"
+  root to: "items#index"
 end
