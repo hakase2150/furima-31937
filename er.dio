@@ -1,4 +1,4 @@
-<mxfile host="65bd71144e" modified="2021-02-05T11:13:49.359Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.52.1 Chrome/83.0.4103.122 Electron/9.3.5 Safari/537.36" etag="kiFBCRzT5MFV4kIZD1jZ" version="13.10.0" type="embed">
+<mxfile host="65bd71144e" modified="2021-02-05T13:02:44.356Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.52.1 Chrome/83.0.4103.122 Electron/9.3.5 Safari/537.36" etag="bpWhX-VKf9a9Us4PhZ7a" version="13.10.0" type="embed">
     <diagram id="zl1K8d6rEF34F4pEpGtc" name="Page-1">
         <mxGraphModel dx="491" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
@@ -19,16 +19,21 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.6;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=ERone;startFill=0;endArrow=ERone;endFill=0;strokeWidth=2;" edge="1" parent="1" source="20" target="30">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;strokeWidth=2;" edge="1" parent="1" source="20">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="300" y="369" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="300" y="369"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="20" value="nickname&lt;br&gt;mail&lt;br&gt;password&lt;br&gt;last_name&lt;br&gt;first_name&lt;br&gt;lase_name_kana&lt;br&gt;first_name_kana&lt;br&gt;brirthday&lt;br&gt;buyer_id" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
+                <mxCell id="20" value="nickname&lt;br&gt;mail&lt;br&gt;password&lt;br&gt;last_name&lt;br&gt;first_name&lt;br&gt;lase_name_kana&lt;br&gt;first_name_kana&lt;br&gt;brirthday" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
                     <mxGeometry x="240" y="170" width="120" height="160" as="geometry"/>
                 </mxCell>
-                <mxCell id="21" value="image(Activestorage)&lt;br&gt;name&lt;br&gt;description&lt;br&gt;category&lt;br&gt;state&lt;br&gt;shipping_charges&lt;br&gt;shipping_area&lt;br&gt;days_to_ship&lt;br&gt;price&lt;br&gt;user_id&lt;br&gt;buyer_id" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
+                <mxCell id="21" value="image(Activestorage)&lt;br&gt;name&lt;br&gt;description&lt;br&gt;category_id&lt;br&gt;state_id&lt;br&gt;shipping_charge_id&lt;br&gt;shipping_area_id&lt;br&gt;days_to_ship_id&lt;br&gt;price&lt;br&gt;user_id" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
                     <mxGeometry x="520" y="170" width="120" height="180" as="geometry"/>
                 </mxCell>
-                <mxCell id="28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;strokeWidth=2;" parent="1" edge="1">
+                <mxCell id="28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERone;startFill=0;endArrow=ERone;endFill=0;strokeWidth=2;" parent="1" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="360" y="410" as="sourcePoint"/>
                         <Array as="points">
@@ -50,16 +55,16 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="30" value="buyers" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
-                    <mxGeometry x="210" y="370" width="150" height="30" as="geometry"/>
+                    <mxGeometry x="240" y="370" width="120" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="31" value="addresses" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
                     <mxGeometry x="520" y="370" width="120" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="32" value="postal_code&lt;br&gt;prefecture&lt;br&gt;city&lt;br&gt;block&lt;br&gt;building_name&lt;br&gt;phone_number&lt;br&gt;buyer_id" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
+                <mxCell id="32" value="postal_code&lt;br&gt;prefecture_id&lt;br&gt;city&lt;br&gt;block&lt;br&gt;building_name&lt;br&gt;phone_number&lt;br&gt;buyer_id" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
                     <mxGeometry x="520" y="400" width="120" height="130" as="geometry"/>
                 </mxCell>
-                <mxCell id="33" value="card_information&lt;br&gt;card_expiration&lt;br&gt;card_security_code&lt;br&gt;user_id&lt;br&gt;item_id" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
-                    <mxGeometry x="210" y="400" width="150" height="130" as="geometry"/>
+                <mxCell id="33" value="user_id&lt;br&gt;item_id" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="400" width="120" height="130" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
