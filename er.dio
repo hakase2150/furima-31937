@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <mxfile host="65bd71144e" modified="2021-02-08T06:10:09.274Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.52.1 Chrome/83.0.4103.122 Electron/9.3.5 Safari/537.36" etag="fYUHeXJNLh6KgTmyRnEL" version="13.10.0" type="embed">
     <diagram id="zl1K8d6rEF34F4pEpGtc" name="Page-1">
         <mxGraphModel dx="491" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
@@ -65,6 +66,28 @@
                 </mxCell>
                 <mxCell id="33" value="user_id&lt;br&gt;item_id" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
                     <mxGeometry x="240" y="400" width="120" height="130" as="geometry"/>
+=======
+<mxfile host="65bd71144e" modified="2021-02-05T08:45:33.031Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.52.1 Chrome/83.0.4103.122 Electron/9.3.5 Safari/537.36" version="13.10.0" etag="z89DKYmTBvTBuRG7EQq9" type="embed">
+    <diagram id="zl1K8d6rEF34F4pEpGtc" name="Page-1">
+        <mxGraphModel dx="1020" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="users" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="140" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="items" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+                    <mxGeometry x="520" y="140" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.008;entryY=0.406;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;" edge="1" parent="1" source="20" target="21">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="nickname&lt;br&gt;mail&lt;br&gt;password&lt;br&gt;real_name&lt;br&gt;real_name_kana&lt;br&gt;brirthday" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="170" width="120" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="name&lt;br&gt;category&lt;br&gt;price&lt;br&gt;seller&lt;br&gt;description&lt;br&gt;state&lt;br&gt;shipping_charges&lt;br&gt;shipping_area&lt;br&gt;days_to_ship&lt;br&gt;exhibition_image&lt;br&gt;" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+                    <mxGeometry x="520" y="170" width="120" height="160" as="geometry"/>
+>>>>>>> Stashed changes
                 </mxCell>
             </root>
         </mxGraphModel>
