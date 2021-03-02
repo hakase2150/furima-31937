@@ -13,12 +13,6 @@ class Item < ApplicationRecord
   with_options presence:true do
     validates :name
     validates :description
-    validates :category_id
-    validates :state_id
-    validates :shipping_charge_id
-    validates :prefecture_id
-    validates :days_to_ship_id
-    validates :price
     validates :image
 
     with_options numericality: { other_than: 1 } do
@@ -33,4 +27,9 @@ class Item < ApplicationRecord
       end
     end
   end
+
+  with_options format: { with: /\A[0-9]+\z/ } do
+    validates :price
+  end
+
 end
