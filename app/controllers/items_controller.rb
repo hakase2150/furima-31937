@@ -22,6 +22,9 @@ class ItemsController < ApplicationController
     @item = Item.find(params[:id])
   end
 
+# 次回実装のためコメントアウト
+=begin
+
   def edit
     @item = Item.find(params[:id])
   end
@@ -40,6 +43,8 @@ class ItemsController < ApplicationController
     item.destroy
     redirect_to root_path
   end
+  
+=end
 
   private
   def item_params
