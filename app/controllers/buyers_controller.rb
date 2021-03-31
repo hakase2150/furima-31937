@@ -3,7 +3,7 @@ class BuyersController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    if user_signed_in? && current_user.id != @item.user_id && @item.buyer == nil
+    if current_user.id != @item.user_id && @item.buyer == nil
       @user_buyer = UserBuyer.new
     else
       redirect_to root_path
