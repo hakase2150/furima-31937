@@ -3,7 +3,6 @@ class ItemsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   before_action :move_to_index, only: [:edit, :update, :destroy]
 
-  
   def index
     @items = Item.includes(:user).order("created_at DESC")
   end
@@ -25,6 +24,11 @@ class ItemsController < ApplicationController
   end
 
   def edit
+    if user_signed_in? && @item.buyer != nil
+      redirect_to root_path
+    else
+      redirect_to new_user_session_path
+    end
   end
 
   def update
