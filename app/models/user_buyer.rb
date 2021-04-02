@@ -6,7 +6,7 @@ class UserBuyer
     validates :city, :block, :token, :user_id, :item_id
     validates :prefecture_id, numericality: { other_than: 1 }
     validates :postal_code, format: { with: /\A[0-9]{3}-[0-9]{4}\z/, message: "is invalid. Include hyphen(-)" }
-    validates :phone_number, format: { with: /\A\d{11}\z/ }
+    validates :phone_number, format: { with: /\A\d{10,11}\z/ }
   end
   
   def save

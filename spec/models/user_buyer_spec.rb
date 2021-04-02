@@ -75,8 +75,8 @@ RSpec.describe UserBuyer, type: :model do
         @user_buyer.valid?
         expect(@user_buyer.errors.full_messages).to include("Phone number is invalid")
       end
-      it 'phone_numberが11桁以上では商品購入できない' do
-        @user_buyer.phone_number = '090-1234-56789'
+      it 'phone_numberが12桁以上では商品購入できない' do
+        @user_buyer.phone_number = '090123456789'
         @user_buyer.valid?
         expect(@user_buyer.errors.full_messages).to include("Phone number is invalid")
       end
