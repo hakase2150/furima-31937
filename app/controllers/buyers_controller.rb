@@ -1,13 +1,10 @@
 class BuyersController < ApplicationController
   before_action :set_item, only: [:index, :create]
+  before_action :redirect_root, only: [:index, :create]
   before_action :authenticate_user!
 
   def index
-    if current_user.id != @item.user_id && @item.buyer == nil
-      @user_buyer = UserBuyer.new
-    else
-      redirect_to root_path
-    end
+    @user_buyer = UserBuyer.new
   end
 
   def create
@@ -38,6 +35,12 @@ class BuyersController < ApplicationController
         card: buyer_params[:token],
         currency: 'jpy'
       )
+  end
+
+  def redirect_root
+    if current_user.id == @item.user_id || @item.buyer != nil
+      redirect_to root_path
+    end
   end
 
 end
