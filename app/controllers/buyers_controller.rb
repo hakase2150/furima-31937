@@ -26,7 +26,7 @@ class BuyersController < ApplicationController
 
   def buyer_params
     params.require(:user_buyer).permit(:postal_code, :prefecture_id, :city, :block, :building_name, :phone_number).merge(item_id: params[:item_id], user_id: current_user.id, token: params[:token])
-  end
+  end 
 
   def pay_item
     Payjp.api_key = ENV["PAYJP_SECRET_KEY"]
@@ -38,7 +38,7 @@ class BuyersController < ApplicationController
   end
 
   def redirect_root
-    if current_user.id == @item.user_id || @item.buyer != nil
+    if user_signed_in? && current_user.id == @item.user_id || @item.buyer != nil
       redirect_to root_path
     end
   end
